@@ -20,15 +20,16 @@
 
 
 </dl>
-<div id="map"></div>
+<div id="map">
     <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 40.250, lng:50.235   },
-          zoom: 8
+          center: {lat: <%= @latitude %>, lng:<%= @longitude %>   },
+          zoom: 15
         });
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1gMuD6uZBjgFDBATeX8FzXmGDINgoUgw&callback=initMap"
     async defer></script>
+</div>

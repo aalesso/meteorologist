@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,16 +18,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <style>
-   body, nav {
-      /*height: 100%;*/
-      margin: 40px;
-    }
-    #map {
-      height: 100%;}
-  </style>
+      <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+          height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+          height: 100%;
+          margin: 40px;
+          padding: 0;
+        }
+      </style>
 </head>
 
 
@@ -43,7 +47,6 @@
 <%= yield %>
 <%= @latitude %>
 <%= @longitude %>
-
 
 
 </body>
